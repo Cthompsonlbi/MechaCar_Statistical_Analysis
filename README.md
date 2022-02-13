@@ -33,18 +33,33 @@ Based on the information provided to us, the design specifications for the Mecha
 
 After running a group_by and summarize code snippet across the lot data, it is evident from reiewing the image above that lots one and two have a variance of less that 100 while lot three has a lot variance of 170, which is above the acceptable lot variance of 100.
 
- ## T-Tests on Suspension Coils
+## T-Tests on Suspension Coils
+ 
+Using T-Tests, we will use to hypothesis to verify the mean PSI of each lot. The hypothesis are as follows:
+ 
+**Hypothesis one is that the true mean of the test sample is equal to 1500, with a p-value limit set to .05.**  Meaning, that if the P-value is greater than .05 (P > .05) we will fail to reject the hypothesis.  To explain in further detail, if the p-value is greater than .05 then based on the data available we can not say that this sample data does not meet the mean parameter of 1500.
+ 
+**Hypothesis two is that the true mean of the test sample is not equal to 1500, with a p-value limit set to .05** Meaning, that if the P-value is less than .05 (P < .05) we are able to reject the hypothesis.  To explain in further detail, if the p-value is less than .05 then based on the data available we can say that this sample data does not meet the mean parameter of 1500.
+ 
+With this in mind, when looking at the entire population of the data set, meaning not segerating data sets by manufacturing lots, we can see that all lots combined have a p-value of .06, which makes it greater than the .05 limit and therefore we fail to reject the null hypothesis that mean is equal to 1500.  By looking at all data combined, it appears that the mean is close to 1500.  Please see the screen snippet below:
  
  ![ttestalllots](Resources/ttestalllots.png)
  
+However, it would be prudent to evaluate each manufacturing lot individually to see if there are any lots that may lead us to an alternate resoultion.
+
+By reviewing each lot on an individual basis, we can have better visibility of deviation from the mean of 1500.  Please see summary below.
+
+For lot one, there is a p-value = 1.  It is greater than the p-value limit of .05 therefore we fail to reject the null hypothesis and determine based on the result from this dataset, that we are unable to determine that this lot varies significantly from the set mean of 1500.
  
- ![ttestlot1](Resources/Resources/ttestlot1.png)
+ ![ttestlot1](Resources/ttestlot1.png)
  
+Below, for lot two, there is a p-value = .6.  It is greater than the p-value limit of .05 therefore we fail to reject the null hypothesis and determine based on the result from this dataset, that we are unable to determine that this lot varies significantly from the set mean of 1500.
  
- ![ttestlot2](Resources/Resources/ttestlot2.png)
+ ![ttestlot2](Resources/ttestlot2.png)
  
+Below, for lot three, there is a p-value = .04.  It is less than the p-value limit of .05 therefore we are able reject the null hypothesis and accept the alternate hypothesis.  Based on the result from this dataset, We determine that this lot varies significantly from the set mean of 1500.
  
- ![ttestlot3](Resources/Resources/ttestlot3.png)
+ ![ttlot3](Resources/ttlot3.png)
  
  
  ## Study Design: MechaCar vs Competition
