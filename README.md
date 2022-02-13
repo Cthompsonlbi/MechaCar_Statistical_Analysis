@@ -63,3 +63,29 @@ Below, for lot three, there is a p-value = .04.  It is less than the p-value lim
  
  
  ## Study Design: MechaCar vs Competition
+
+For this deliverable, we would like to verify how MechaCar compares to competitors equivalent model. For this analysis, we would keep in mind key metrics that are of interest to most customers when considering the purchase of a new vehicle.  These metrics of interest to the consumer would be cost, city or highway fuel efficiency, horse power, options, maintenance cost, or safety rating.  Because MechaCar is a new model, we will be limited to the year over year data that we could use when comparing to the competitor but, we could leverage multi-year information from the competitor to identify consumer trends when it comes to cars that are comparable to MechaCar and their target markets.
+
+Using competition data for the past 5 years to compare to the MechaCar, we could determine metrics  of interest to the consumer.  They would be as follows: Please keep in mind that this metrics is not all inclusive as we are operating off a pair of hypothesis, therefore could change substantially as we evaluate the results and make adjustments to develop an accurate model. 
+
+**Dependent Variable**
+ * Cost. In the end, the consumer would concerned by cost as it relates to value. This would be a **Dependent Variable** as the other variables in the metric could have a direct impact upon cost.
+  
+ **Independent Variables**
+ * Fuel efficiency
+ * Options
+ * Horse Power
+ * Motor Type (Hybrid, Electric, Hydrogen, Gas, etc)
+ * Maintenance Cost/Reputation
+ * Safety Cost
+ * Dealership Service and Support/Goodwill
+
+### Hypothesis:
+** Null Hypothesis (Ho):** MechaCar competitors key independent variables has no impact upon dependent variable (car price)
+** Alternate Hypothesis (Ha):** MechaCar competitors key independent variables has an impact upon the dependent variable (car price)
+
+Statistical Analysis To Validate Null and Alternate Hypothesis
+
+As we have done with MechaCar to determine which variables have the greatest impact on MPG, we could run a similar analysis to identify which variables have the greatest impact on our competitors car price and how those prices impact car sales for the competitor.  To do this, we would run a **Multiple Linear Regression** model.  This will allow us to do a comparitive analysis of the competitors vehicles to see which variable have the greatest impact on price and then upon sales. We can use this data to compare if those variables have similar impacts on MechaCar's price and sales.  Perhaps other variables are causing MechaCars having similar or higher prices to the competitor but do not translate into sales.
+
+Then because MechaCar is new to the market, we do not have the benefit of historical data to assist with decision making.  Fortunately we can use **T-Test Analysis** on competitor data to identify trends over the years to determine how the consumers buying habits have changed over the years.
