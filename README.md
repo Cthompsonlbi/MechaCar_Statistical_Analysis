@@ -1,7 +1,15 @@
 # MechaCar_Statistical_Analysis
 Module 15 Challenge
 
+# Overview
 
+Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
+
+Jeremy needs assistance from his analytics team to perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes.  The team also needs to collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots and run t-tests to determine if the manufacturing lots are statistically different from the mean population. Then the team needs to design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. The team will need to provide a summary interpretation of the findings.
+
+## Purpose
+
+The purpose of this project is to use skills learned during this module to run analysis upon data using tool sets such as R through RScript to test for Linear Regression to Predict MPG, Summary Statistics on Suspension Coils and T-Test on Suspension Coils in aggregate and then seperated out by each lot.
 
 ## Linear Regression to Predict MPG
 ![Del1Result](Resources/Del1Result.PNG)
@@ -27,6 +35,16 @@ After running a group_by and summarize code snippet across the lot data, it is e
 
  ## T-Tests on Suspension Coils
  
+ ![ttestalllots](Resources/ttestalllots.png)
+ 
+ 
+ ![ttestlot1](Resources/Resources/ttestlot1.png)
+ 
+ 
+ ![ttestlot2](Resources/Resources/ttestlot2.png)
+ 
+ 
+ ![ttestlot3](Resources/Resources/ttestlot3.png)
  
  
  ## Study Design: MechaCar vs Competition
